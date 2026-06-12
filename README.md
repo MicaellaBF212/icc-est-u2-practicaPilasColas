@@ -43,7 +43,7 @@ Se puede observar en consola que el satck fue ordenado de mayor a menor usando u
 ## Ejercicio 03: Palindromo usando colas
 
 ### Explicacion
-En este ejercicio se creó una clase llamada QueuePalindrome usando una cola con ArrayDeque. Su función es revisar si una palabra es un palindromo como en la anterior. Se encarga de recorrer el texto caracter por coaracter tambien se pidio que si se usa una frase se pueda ignorar espacios y por eso se construyen dos cadenas: una en orden normal y otra en orden invertido. Si ambas cadenas son iguales el metodo devuelve true y si son diferentes devuelve false.
+En este ejercicio se creó una clase llamada QueuePalindrome usando dos colas con ArrayDeque. Su función es convertir el texto en un arreglo de caracteres. Luego se va a encargar de llenar la colaPrincipal de izquierda a derecha y colaInvertida de derecha a izquierda, tambien le colocamos un if para ignorar espacios en caso de tener una frase. Para finalizar, compara caracter a caracter usando el poll() en ambas colas no se compara el string con la palabra invertida como en la anterior practica. Al finalizar si todos los caracteres coinciden, devuleve true caso contrario devuelve false.
 
 
 ### Codigo
@@ -62,4 +62,4 @@ Las pilas permiten validar los signos de apertura y cierre recorriendo la cadena
 Ordenar un stack sin usar arreglos ni listas es posible usando solo un stack auxiliar, sacando cada elemento y recolocando los que no corresponden hasta que aux quede ordenado y al devolverlo de regreso el menor queda en el tope.
 
 ### Conclusión 3:
-Las colas permiten resolver problemas de comparación de cadenas como los palíndromos, porque al recorrer los elementos en orden se puede construir y comparar la cadena original con su versión invertida.
+Determinar si una palabra es palindromo usando colas llenando una cola en orden normal y otra en orden inverso y comparando caracter por caracter sin necesidad de comparar directamente el string original con su version invertida.
